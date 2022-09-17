@@ -52,6 +52,7 @@ body {
   height: 100%;
   color: #ffffff;
   font-size: 11px;
+  font-weight: 400;
 }
 
 .__ibg {
@@ -60,13 +61,18 @@ body {
 
 .container {
   padding: 0 18px;
-  min-width: 340px;
+  max-width: 340px;
   margin: 0 auto;
   box-sizing: content-box;
 }
 
-.page {
+.main {
   flex: 1 1 auto;
+}
+
+.title {
+  font-family: "Yeseva One";
+  color: #e3b873;
 }
 
 .header__logo-text {
@@ -86,10 +92,7 @@ body {
 
 .header__block {
   background-color: #131313;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .header__heading {
@@ -102,7 +105,7 @@ body {
 }
 
 .header__span-heading {
-  color: #e3b873;
+  color: #ffffff;
 }
 
 .header__subtitle {
@@ -128,7 +131,8 @@ body {
 .header__content-block {
   position: relative;
   z-index: 2;
-  padding: 85px 0 61px 0;
+  padding: 85px 18px 61px;
+  margin: 0 auto;
 }
 
 .header__content {
@@ -174,4 +178,36 @@ body {
   top: 0;
   left: 0;
   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.header__block--wrap {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__gallery--title {
+  font-size: 22px;
+  line-height: 138.6%;
+  max-width: 215px;
+  margin: 0 auto;
+}
+
+.main__gallery--subtitle {
+  line-height: 158.48%;
+  max-width: 311px;
+}
+
+.main__gallery {
+  text-align: center;
+}
+
+.main__gallery--slider {
+  width: 100%;
+}
+
+.main__wrapper {
+  background-color: #131313;
+  padding-top: 36px;
 }
