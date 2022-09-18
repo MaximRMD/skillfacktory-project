@@ -73,6 +73,8 @@ body {
 .title {
   font-family: "Yeseva One";
   color: #e3b873;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 .header__logo-text {
@@ -96,7 +98,6 @@ body {
 }
 
 .header__heading {
-  font-family: "Yeseva One";
   font-weight: 400;
   font-size: 23px;
   line-height: 132.83%;
@@ -192,11 +193,13 @@ body {
   line-height: 138.6%;
   max-width: 215px;
   margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 .main__gallery--subtitle {
   line-height: 158.48%;
   max-width: 311px;
+  margin: 0 auto 72px;
 }
 
 .main__gallery {
@@ -210,4 +213,59 @@ body {
 .main__wrapper {
   background-color: #131313;
   padding-top: 36px;
+}
+
+.main__specifications-title {
+  font-size: 14px;
+  line-height: 138.6%;
+  margin-bottom: 11px;
+}
+
+.main__specifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(141px, 1fr));
+  grid-template-rows: auto;
+}
+
+.main__specifications-blocks {
+  text-align: start;
+}
+
+.main__gallery--img {
+  margin-bottom: 36px;
+}
+
+.main__specifications-subtitle--width {
+  max-width: 99px;
+}
+
+.main__specifications-subtitle {
+  margin-bottom: 27px;
+}
+
+.main__fichi-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.main__fichi-img {
+  margin-bottom: 40px;
+}
+
+.main__fichi-video--img {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.main__fichi-video::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 1.54px;
+  background: #e3b873;
+  margin: 0 auto 21px;
+}
+
+.main__fichi-description {
+  max-width: 340px;
 }
