@@ -18,7 +18,7 @@
         <header class="header">
     <div class="header__block">
         <div class="header__block--wrap container">
-            <p class="header__logo-text">IC "Repair Design Project"</p>
+            <a href="index.html" class="header__logo-text">IC "Repair Design Project"</a>
             <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
         </div>
 
@@ -32,8 +32,8 @@
                 with work time saving up to 45 days and
                 20% from cost of materials due to the organization of work</p>
             <div class="header__button-block">
-                <button class="header__button header__button--color button">Calculate the cost</button>
-                <button class="header__button button header__button--background">Application</button>
+                <button tabindex="3" class="header__button header__button--color button">Calculate the cost</button>
+                <button tabindex="4" class="header__button button header__button--background">Application</button>
             </div>
 
         </div>
@@ -100,8 +100,32 @@
                     ou can watch the live broadcast from one of our facilities!
                     Leave a request below and you will receive a link to the broadcast.</p>
             </div>
+
+            <form action="#" method="post" enctype="multipart/form-data" class="main__form-user">
+                <fieldset>
+                    <p class="main__form-comtact">
+                        <label class="main__form-label" for="username">Name</label>
+                        <input class="main__form-input" tabindex="5" id="username" type="text" name="username"
+                            placeholder="What is your name:">
+                    </p>
+                    <p class="main__form-comtact">
+                        <label class="main__form-label" for="usertel">Number</label>
+                        <input class="main__form-input" tabindex="6" id="usertel" type="tel" name="usertel"
+                            placeholder="Your phone number:">
+                    </p>
+                </fieldset>
+                <label for="check" class="main__form-check option">
+                    <input id="check" type="checkbox" class="main__form-checkbox">
+                    <span class="main__checkbox"></span>
+                    <span class="main__form-text-check">I
+                        agree to the processing of personal
+                        data</span>
+                </label>
+            </form>
         </div>
     </section>
+    <div class="main__form-button--wrapper container"><button class="main__form-button--color button">Submit</button>
+    </div>
 </main>
         <footer class="footer container" id="footer">
 

@@ -213,6 +213,7 @@ body {
 .main__wrapper {
   background-color: #131313;
   padding-top: 36px;
+  padding-bottom: 88px;
 }
 
 .main__specifications-title {
@@ -268,4 +269,74 @@ body {
 
 .main__fichi-description {
   max-width: 340px;
+}
+
+.main__form-label {
+  color: #ffffff;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.main__form-comtact {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 63px;
+}
+
+.main__form-input {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  padding: 6px 0 8px 0;
+  font-size: 14px;
+}
+
+.main__fichi-description--block {
+  margin-bottom: 61px;
+}
+
+.main__form-text-check {
+  font-size: 14px;
+  line-height: 163.68%;
+  margin-left: 5px;
+}
+
+.main__form-checkbox {
+  margin-right: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+.main__form-checkbox:checked + .main__checkbox {
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+}
+
+.main__checkbox {
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/checkbox-frame.svg");
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  transition: 0.25s;
+}
+
+.main__form-check {
+  padding-left: -1.2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 62px;
+}
+
+.main__form-button--color {
+  background-color: #e3b873;
+  width: 100%;
+}
+
+.main__form-button--wrapper {
+  margin-top: -27px;
+  margin-bottom: 58px;
 }
