@@ -77,6 +77,11 @@ body {
   text-transform: uppercase;
 }
 
+.button-gold {
+  background-color: #e3b873;
+  width: 100%;
+}
+
 .header__logo-text {
   font-weight: 400;
   font-size: 11px;
@@ -339,4 +344,78 @@ body {
 .main__form-button--wrapper {
   margin-top: -27px;
   margin-bottom: 58px;
+}
+
+.main__catalog-img {
+  width: 100%;
+  position: absolute;
+}
+
+.main__catalog-list-price {
+  font-size: 13px;
+  line-height: 169.8%;
+  color: #959595;
+}
+
+.main__catalog-heading-price {
+  color: #363636;
+  font-size: 15px;
+  line-height: 138.6%;
+}
+
+.main__catalog-item-price {
+  padding-left: 16px;
+}
+
+.main__catalog-price-wrap {
+  padding: 21px 38px 37px 31px;
+  background-color: white;
+  max-width: 270px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.main__catalog-blok {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.main__catalog-price {
+  position: relative;
+  padding-top: 222px;
+  left: 0;
+}
+
+.main__catalog-button-price {
+  max-width: 190px;
+  margin-top: -23px;
+  font-size: 15px;
+  line-height: 138.6%;
+  font-family: "Yeseva One";
+  text-transform: uppercase;
+}
+
+.main__catalog-heading {
+  color: #181818;
+  font-size: 22px;
+  line-height: 138.6%;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Yeseva One";
+  margin-bottom: 18px;
+}
+
+.main__catalog-svg-camera {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.main__catalog-svg-camera::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 2px;
+  margin-right: 7px;
+  transform: translate(-27px, -8px) rotate(90deg);
+  background: var(--bacic-light-grey);
 }
