@@ -36,6 +36,10 @@ img {
   vertical-align: top;
 }
 
+.img {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -80,6 +84,10 @@ body {
 .button-gold {
   background-color: #e3b873;
   width: 100%;
+}
+
+.main__form-button--color {
+  font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 }
 
 .header__logo-text {
@@ -219,6 +227,7 @@ body {
   background-color: #131313;
   padding-top: 36px;
   padding-bottom: 88px;
+  display: block;
 }
 
 .main__specifications-title {
@@ -379,6 +388,10 @@ body {
   margin-bottom: 60px;
 }
 
+.main__catalog-blok:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
 .main__catalog-price {
   position: relative;
   padding-top: 222px;
@@ -418,4 +431,54 @@ body {
   margin-right: 7px;
   transform: translate(-27px, -8px) rotate(90deg);
   background: var(--bacic-light-grey);
+}
+
+.main__questions-heading-form {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 52px;
+}
+
+.main__questions-heading {
+  max-width: 226px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.main__questions {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.main__questions-wrap {
+  margin-top: -192px;
+}
+
+.main__questions-img {
+  width: 100%;
+}
+
+.main__catalog-section {
+  margin-bottom: 266px;
+}
+
+.main__questions-slider {
+  margin-bottom: 52px;
+}
+
+.main__contacts {
+  max-width: 310px;
+  font-size: 18px;
+  line-height: 138.6%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main__map {
+  margin-bottom: 42px;
 }
