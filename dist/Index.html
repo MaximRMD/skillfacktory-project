@@ -19,7 +19,16 @@
     <div class="header__block">
         <div class="header__block--wrap container">
             <a href="index.html" class="header__logo-text">IC "Repair Design Project"</a>
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Projects</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Measurement</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Team</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Reviews</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Contacts</a></li>
+            </ul>
             <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
+            <button class="header__button-call header__button--color button">Request a call</button>
         </div>
 
     </div>
@@ -32,8 +41,11 @@
                 with work time saving up to 45 days and
                 20% from cost of materials due to the organization of work</p>
             <div class="header__button-block">
-                <button tabindex="3" class="header__button header__button--color button">Calculate the cost</button>
-                <button tabindex="4" class="header__button button header__button--background">Application</button>
+                <button class="header__button header__button--color button">Calculate the cost</button>
+                <button
+                    class="header__button button header__button--background header__button-phone">Application</button>
+                <button class="header__button button header__button--background header__button-desktop">Submit your
+                    application</button>
             </div>
 
         </div>
@@ -258,14 +270,14 @@
             <h2 class="main__contacts title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
                 Tel:&nbsp;+7 (928) 768 32 29</h2>
         </div>
-        <div class="main__contacts-wrapp">
-            <div class="main__contacts-svg">
-                <img class="main__contacts-mail" src="img/mail.svg" alt="Конверт">
-            </div>
-            <div class="main__contacts-svg">
-                <img class="main__contacts-insta" src="img/insta.svg" alt="Логотип инстаграмма">
-            </div>
-        </div>
+        <ul class="main__contacts-wrapp">
+            <li class="main__contacts-svg-mail">
+                <a class="main__contacts-item main__contacts-mail" href="#">mail</a>
+            </li>
+            <li class="main__contacts-svg-insta">
+                <a class="main__contacts-item main__contacts-insta" href="#">instagramm</a>
+            </li>
+        </ul>
     </sections>
 </main>
         <footer class="footer" id="footer">
