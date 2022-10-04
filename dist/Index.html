@@ -8,7 +8,7 @@
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/app.min.js" defer></script>
+    <script src="../js/app.min.js" defer></script>
     <title>Сайт визитка</title>
 </head>
 </head>
@@ -28,7 +28,7 @@
                 <li class="header__nav-item"><a href="#" class="header__nav-link">Contacts</a></li>
             </ul>
             <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
-            <button class="header__button-call header__button--color button">Request a call</button>
+            <button href="#main__map" class="header__button-call header__button--color button">Request a call</button>
         </div>
 
     </div>
@@ -50,10 +50,10 @@
 
         </div>
         <picture>
-            <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
-                media="(min-width: 1200px)">
-            <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
-                media="(min-width: 660px)"> -->
+            <source srcset="img/header-fon-desktop@1x.jpg 1x, img/header-fon-desktop@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 1024px)">
+            <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 660px)"> --> -->
             <source srcset="img/header-fon@1x.jpg 1x, img/header-fon@2x.jpg 2x" type="image/jpg"
                 media="(min-width: 320px)">
             <img src="img/header-fon@1x.jpg" alt="Мебель" class="header__img">
@@ -71,27 +71,105 @@
                 </p>
             </div>
 
-            <div class="main__gallery--img">
-                <img class="main__gallery--slider" src="img/interier-white@1x.jpg" alt="Гостинная">
-            </div>
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="main__gallery--img">
+                        <picture>
+                            <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+                                media="(min-width: 660px)"> -->
+                            <source srcset="img/interier-white@1x.jpg 1x, img/interier-white@2x.jpg 2x"
+                                type="image/jpg" media="(min-width: 320px)">
+                            <img class="main__gallery--slider" src="img/interier-white@1x.jpg" alt="Приемная">
+                        </picture>
+                    </div>
 
-            <div class="main__specifications">
-                <div class="main__specifications-blocks">
-                    <h3 class="main__specifications-title title">City:</h3>
-                    <p class="main__specifications-subtitle main__specifications-subtitle--width">Rostov-on-Don
-                        LCD admiral</p>
+                    <div class="main__specifications">
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">City:</h3>
+                            <p class="main__specifications-subtitle main__specifications-subtitle--width">Rostov-on-Don
+                                LCD admiral</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">apartment area:</h3>
+                            <p class="main__specifications-subtitle">81 m2</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">Repair time:</h3>
+                            <p class="main__specifications-subtitle">3.5 months</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">Repair Cost:</h3>
+                            <p class="main__specifications-subtitle">Upon request</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="main__specifications-blocks">
-                    <h3 class="main__specifications-title title">apartment area:</h3>
-                    <p class="main__specifications-subtitle">81 m2</p>
+                <div class="slider__item">
+                    <div class="main__gallery--img">
+                        <picture>
+                            <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+                                media="(min-width: 660px)"> -->
+                            <source srcset="img/interier-office@1x.jpg 1x, img/interier-office@2x.jpg 2x"
+                                type="image/jpg" media="(min-width: 320px)">
+                            <img class="main__gallery--slider" src="img/interier-office@1x.jpg" alt="Рабочая комната">
+                        </picture>
+                    </div>
+
+                    <div class="main__specifications">
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">City:</h3>
+                            <p class="main__specifications-subtitle main__specifications-subtitle--width">Rostov-on-Don
+                                LCD admiral</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">apartment area:</h3>
+                            <p class="main__specifications-subtitle">89 m2</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">Repair time:</h3>
+                            <p class="main__specifications-subtitle">4.5 months</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">Repair Cost:</h3>
+                            <p class="main__specifications-subtitle">Upon request</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="main__specifications-blocks">
-                    <h3 class="main__specifications-title title">Repair time:</h3>
-                    <p class="main__specifications-subtitle">3.5 months</p>
-                </div>
-                <div class="main__specifications-blocks">
-                    <h3 class="main__specifications-title title">Repair Cost:</h3>
-                    <p class="main__specifications-subtitle">Upon request</p>
+                <div class="slider__item">
+                    <div class="main__gallery--img">
+                        <picture>
+                            <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+                                media="(min-width: 660px)"> -->
+                            <source srcset="img/interier-guests@1x.jpg 1x, img/interier-guests@2x.jpg 2x"
+                                type="image/jpg" media="(min-width: 320px)">
+                            <img class="main__gallery--slider" src="img/interier-guests@1x.jpg" alt="Гостинная">
+                        </picture>
+                    </div>
+
+                    <div class="main__specifications">
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">City:</h3>
+                            <p class="main__specifications-subtitle main__specifications-subtitle--width">Rostov-on-Don
+                                LCD admiral</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">apartment area:</h3>
+                            <p class="main__specifications-subtitle">94 m2</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">Repair time:</h3>
+                            <p class="main__specifications-subtitle">5.3 months</p>
+                        </div>
+                        <div class="main__specifications-blocks">
+                            <h3 class="main__specifications-title title">Repair Cost:</h3>
+                            <p class="main__specifications-subtitle">Upon request</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -264,7 +342,7 @@
                     <button class="main__form-button--color button">Submit</button>
                 </div>
             </form>
-            <div class="main__map">
+            <div id="main__map" class="main__map">
                 <img class="main__map-img img" src="img/map.jpg" alt="карта">
             </div>
             <h2 class="main__contacts title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
@@ -278,6 +356,7 @@
                 <a class="main__contacts-item main__contacts-insta" href="#">instagramm</a>
             </li>
         </ul>
+
     </sections>
 </main>
         <footer class="footer" id="footer">
