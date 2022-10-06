@@ -340,11 +340,22 @@ body {
   background-image: url("../img/slide-arrow-left.svg");
   left: 10px;
 }
+@media screen and (min-width: 1024px) {
+  .slider .slick-arrow.slick-prev {
+    background-image: url("../img/slide-arrow-left-desktop.svg");
+  }
+}
 
 /* Стрелка вправо */
 .slider .slick-arrow.slick-next {
   right: 10px;
   background-image: url("../img/slide-arrow-right.svg");
+}
+@media screen and (min-width: 1024px) {
+  .slider .slick-arrow.slick-next {
+    background-image: url("../img/slide-arrow-right-desktop.svg");
+    right: 994px;
+  }
 }
 
 .slider {
@@ -354,11 +365,17 @@ body {
 }
 @media screen and (min-width: 768px) {
   .slider {
+    max-width: 679px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider {
     max-width: 1236px;
   }
 }
 
 .slider .slick-arrow {
+  cursor: pointer;
   position: absolute;
   top: 23%;
   z-index: 10;
@@ -369,6 +386,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 1024px) {
+  .slider .slick-arrow {
+    width: 42px;
+    height: 14px;
+    background: transparent;
+    top: 88%;
+  }
+}
 
 .slider .slick-disabled {
   opacity: 0.4;
@@ -376,6 +401,42 @@ body {
 
 .slider__item {
   text-align: center;
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 87.3%;
+    left: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots li {
+    list-style: none;
+    margin: 0 18px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots li.slick-active button {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main__gallery--title {
@@ -384,12 +445,31 @@ body {
   max-width: 215px;
   margin: 0 auto;
   margin-bottom: 22px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .main__gallery--title {
+    font-size: 27px;
+    line-height: 37px;
+    margin: 0 0 22px 0;
+  }
 }
 
 .main__gallery--subtitle {
   line-height: 158.48%;
   max-width: 311px;
   margin: 0 auto 72px;
+  font-size: 11px;
+  line-height: 158.48%;
+}
+@media screen and (min-width: 1024px) {
+  .main__gallery--subtitle {
+    margin: 0 0 22px 0;
+    font-size: 14px;
+    line-height: 27px;
+    max-width: 445px;
+  }
 }
 
 .main__gallery {
@@ -418,13 +498,48 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(141px, 1fr));
   grid-template-rows: auto;
 }
+@media screen and (min-width: 1024px) {
+  .main__specifications {
+    grid-template-columns: 1fr 1fr;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+}
 
 .main__specifications-blocks {
   text-align: start;
 }
 
-.main__gallery--img {
-  margin-bottom: 36px;
+@media screen and (min-width: 1024px) {
+  .main__gallery--img {
+    margin-bottom: 0;
+    margin-bottom: 36px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+
+.main__gallery--heading {
+  display: block;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+@media screen and (min-width: 1024px) {
+  .main__gallery--heading {
+    display: none;
+  }
+}
+
+.main__gallery--heading-desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .main__gallery--heading-desktop {
+    display: block;
+    text-align: start;
+  }
 }
 
 .main__specifications-subtitle--width {
@@ -626,12 +741,6 @@ body {
   margin-bottom: 21px;
 }
 
-.main__questions {
-  padding: 0;
-  position: absolute;
-  width: 100%;
-}
-
 .main__questions-wrap {
   margin-top: -192px;
 }
@@ -700,4 +809,15 @@ body {
 .main__contacts-item:active {
   background-color: #b38c4e;
   opacity: 0.4;
+}
+
+.main__gallery-wrapp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+@media screen and (min-width: 1024px) {
+  .main__gallery-wrapp {
+    grid-template-columns: 1fr 1.2fr;
+  }
 }
