@@ -82,10 +82,6 @@ body {
   }
 }
 
-.main {
-  flex: 1 1 auto;
-}
-
 .title {
   font-family: "Yeseva One";
   color: #e3b873;
@@ -96,10 +92,6 @@ body {
 .button-gold {
   background-color: #e3b873;
   width: 100%;
-}
-
-.main__form-button--color {
-  font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 }
 
 .button {
@@ -362,15 +354,18 @@ body {
   position: relative;
   max-width: 340px;
   margin: 0 auto;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .slider {
     max-width: 679px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1024px) {
   .slider {
     max-width: 1236px;
+    margin-bottom: 90px;
   }
 }
 
@@ -404,6 +399,9 @@ body {
   display: flex;
 }
 
+.slider .slick-dots {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .slider .slick-dots {
     display: flex;
@@ -437,6 +435,14 @@ body {
   .slider .slick-dots li.slick-active button {
     background-color: rgba(255, 255, 255, 0.3);
   }
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.main__form-button--color {
+  font-family: Nunito Sans, Arial, Helvetica, sans-serif;
 }
 
 .main__gallery--title {
@@ -485,6 +491,11 @@ body {
   padding-top: 36px;
   padding-bottom: 88px;
   display: block;
+}
+@media screen and (min-width: 1024px) {
+  .main__wrapper {
+    padding-top: 108px;
+  }
 }
 
 .main__specifications-title {
@@ -539,6 +550,15 @@ body {
   .main__gallery--heading-desktop {
     display: block;
     text-align: start;
+  }
+}
+
+.main__gallery--img {
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 1024px) {
+  .main__gallery--img {
+    margin-bottom: 0;
   }
 }
 
@@ -820,4 +840,61 @@ body {
   .main__gallery-wrapp {
     grid-template-columns: 1fr 1.2fr;
   }
+}
+
+.main__fichi-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background-color: #959595;
+  margin: 0 auto;
+}
+
+.main__fichi-video-frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main__fichi-video-play {
+  position: absolute;
+  height: 37px;
+  width: 37px;
+  background-color: #e3b873;
+  z-index: 2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .main__fichi-video-play {
+    height: 85px;
+    width: 85px;
+  }
+}
+
+.main__fichi-video-svg {
+  width: 10px;
+  height: 11px;
+  margin-left: 3px;
+}
+@media screen and (min-width: 768px) {
+  .main__fichi-video-svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.flex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
