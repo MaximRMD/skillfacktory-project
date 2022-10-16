@@ -94,6 +94,16 @@ body {
   width: 100%;
 }
 
+.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .button {
   color: #ffffff;
   max-width: 340px;
@@ -109,6 +119,7 @@ body {
 }
 .button:hover {
   transform: scale(1.1, 1.1);
+  background-color: #daa44d;
 }
 
 .header__logo-text {
@@ -266,14 +277,7 @@ body {
 }
 
 .header__gradient {
-  position: absolute;
   background: linear-gradient(3deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .header__block--wrap {
@@ -313,6 +317,17 @@ a:nth-last-of-type(1) {
 
 .header__nav-link {
   color: #ffffff;
+}
+
+@media screen and (min-width: 320px) {
+  .header__block-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__block-desktop {
+    display: block;
+  }
 }
 
 /* Слайдер */
@@ -675,7 +690,7 @@ a:nth-last-of-type(1) {
 }
 
 .main__form-label {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 2px;
   font-size: 13px;
   line-height: 21px;
@@ -683,6 +698,11 @@ a:nth-last-of-type(1) {
 @media screen and (min-width: 768px) {
   .main__form-label {
     color: rgba(54, 54, 54, 0.5);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__form-label {
+    color: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -698,6 +718,23 @@ a:nth-last-of-type(1) {
     margin-bottom: 33px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .main__form-comtact {
+    flex: 2;
+  }
+  .main__form-comtact:nth-last-of-type(3) {
+    flex: 1;
+    margin-right: 58px;
+  }
+  .main__form-comtact:nth-last-of-type(2) {
+    flex: 1;
+  }
+}
+
+.main__form-user {
+  max-width: 520px;
+  margin: 0 auto;
+}
 
 .main__form-input {
   background: transparent;
@@ -706,10 +743,39 @@ a:nth-last-of-type(1) {
   padding: 6px 0 8px 0;
   font-size: 14px;
 }
+.main__form-input::placeholder {
+  color: white;
+  opacity: 1;
+}
 @media screen and (min-width: 768px) {
   .main__form-input {
-    color: #363636;
     border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+  }
+  .main__form-input::placeholder {
+    color: #363636;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__form-input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .main__form-input::placeholder {
+    color: white;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__form-input-tablet::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__form-label-tablet {
+    color: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -758,6 +824,7 @@ a:nth-last-of-type(1) {
 @media screen and (min-width: 768px) {
   .main__form-check {
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -771,6 +838,12 @@ a:nth-last-of-type(1) {
   position: relative;
   font-family: Nunito Sans, Arial, Helvetica, sans-serif;
   margin-bottom: 46px;
+}
+@media screen and (min-width: 1024px) {
+  .main__form-button--color {
+    max-width: 200px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -971,11 +1044,12 @@ a:nth-last-of-type(1) {
 }
 
 .main__questions-wrap {
-  margin-top: -192px;
   position: relative;
+  z-index: 3;
 }
+
 @media screen and (min-width: 1024px) {
-  .main__questions-wrap {
+  .main__questions-display {
     display: none;
   }
 }
@@ -1207,7 +1281,7 @@ a:nth-last-of-type(1) {
 }
 
 .main__application {
-  margin-bottom: 130px;
+  margin-bottom: 360px;
   display: none;
 }
 @media screen and (min-width: 1024px) {
@@ -1246,6 +1320,286 @@ a:nth-last-of-type(1) {
   z-index: 2;
 }
 
+.main__gallery-img {
+  width: 100%;
+}
+
+.main__gallery-gradient {
+  background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.main__gallery-block {
+  position: absolute;
+  padding-top: 864px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("../img/main__catalog-img-background@1x.jpg");
+}
+@media screen and (min-resolution: 2dppx) {
+  .main__gallery-block {
+    background-image: url("../img/main__catalog-img-background@2x.jpg");
+  }
+}
+
+.main__gallery-block-list {
+  min-width: 228px;
+  margin: 0 11px 90px 0px;
+}
+@media screen and (min-width: 1199px) {
+  .main__gallery-block-list {
+    max-width: 299px;
+    margin: 0 189px 98px 99px;
+  }
+}
+
+.main__gallery-list {
+  list-style: none;
+}
+
+.main__gallery-img-block {
+  margin-right: 44px;
+  position: relative;
+  bottom: 41px;
+}
+.main__gallery-img-block:nth-last-of-type(1) {
+  margin-right: 0;
+  bottom: 112px;
+}
+
+.main__gallery-img-blocks {
+  margin-bottom: 40px;
+}
+.main__gallery-img-blocks:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.main__gallery-item {
+  margin-bottom: 26px;
+  transition: 0.25s;
+}
+.main__gallery-item:hover {
+  transform: scale(1.1, 1.1);
+}
+.main__gallery-item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.main__gallery-heading {
+  margin: 0 auto 47px 0;
+}
+
+.main__gallery-link {
+  font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.main__gallery-active {
+  color: #e3b873;
+  text-decoration: underline;
+}
+.main__gallery-active:hover {
+  transform: scale(1, 1);
+}
+
+.main__gallery-block-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.main__gallery-img-flex {
+  display: flex;
+  position: relative;
+}
+
+.main__galery-wrapp {
+  position: relative;
+}
+
+@media screen and (min-width: 320px) {
+  .main__galery-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__galery-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__galery-desktop {
+    display: block;
+  }
+}
+
+.main__reviews-heading {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #181818;
+  margin-bottom: 14px;
+  font-family: "Yeseva One";
+}
+
+.main__reviews-heading-block {
+  text-align: center;
+}
+
+.main__reviews-subtitle {
+  font-size: 18px;
+  line-height: 29px;
+  color: #131313;
+  max-width: 366px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+.main__reviews-svg {
+  margin-bottom: 24px;
+}
+
+.main__reviews-cart {
+  max-width: 467px;
+  padding: 24px 31px 27px 20px;
+}
+
+.main__reviews-avatar-text {
+  font-size: 13px;
+  line-height: 180%;
+  color: #959595;
+  margin-bottom: 63px;
+}
+
+.main__reviews-avatar-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.main__avatar-button-svg {
+  margin-right: 15px;
+}
+
+.main__reviews-avatar-name {
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+  font-family: "Yeseva One";
+  max-width: 178px;
+  margin-left: 23px;
+}
+
+.main__reviews-avatar-button {
+  min-width: 293px;
+  background-color: #e3b873;
+  padding: 11px 0;
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.main__reviews-button-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.main__button-svg-wrapp {
+  margin: 0 15px 0 17px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.main__avatar-button-text {
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.main__reviews-block-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+  .main__reviews {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__reviews {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__reviews {
+    display: block;
+  }
+}
+
+.main__questions-block-desktop {
+  position: relative;
+  max-width: 883px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .main__questions-block-desktop {
+    padding: 34px 0 34px 0;
+    background-color: #181818;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__form-desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__form-button--footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__form-input-border-desktop {
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__form-input-desktop {
+    color: #363636;
+  }
+  .main__form-input-desktop::placeholder {
+    color: #363636;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__form-label-desktop {
+    color: rgba(54, 54, 54, 0.5);
+  }
+}
+
+.main__form-fieldset-desktop {
+  max-width: inherit;
+}
+
+@media screen and (min-width: 1024px) {
+  .main__form-comtact-desktop {
+    margin-right: 58px;
+  }
+}
+
 .flex {
   cursor: pointer;
   position: absolute;
@@ -1275,9 +1629,19 @@ a:nth-last-of-type(1) {
   margin: 0 auto;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 1024px) {
+  .footer__contacts {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 589px;
+  }
+}
 
 .footer__map {
   margin-bottom: 42px;
+  order: 2;
 }
 
 .footer__contacts-wrapp {
@@ -1326,4 +1690,47 @@ a:nth-last-of-type(1) {
 }
 .footer__contacts-svg-mail:nth-last-of-type(1) {
   margin-right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__wrapp {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__contact-block {
+    order: 1;
+    padding-top: 274px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer__map-background-img {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__map-background-img {
+    background-image: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__map-background-img {
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/footer-background@1x.png");
+    margin-top: -225px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__gradient {
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  }
 }
