@@ -113,6 +113,7 @@
 }
 
 .main__gallery--img {
+    margin-bottom: 33px;
     @include desktop {
         margin-bottom: 0;
         margin-bottom: 36px;
@@ -137,13 +138,6 @@
     @include desktop {
         display: block;
         text-align: start;
-    }
-}
-
-.main__gallery--img {
-    margin-bottom: 36px;
-    @include desktop {
-        margin-bottom: 0;
     }
 }
 

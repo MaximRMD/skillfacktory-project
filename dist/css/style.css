@@ -502,6 +502,9 @@ body {
   }
 }
 
+.main__gallery--img {
+  margin-bottom: 33px;
+}
 @media screen and (min-width: 1024px) {
   .main__gallery--img {
     margin-bottom: 0;
@@ -531,15 +534,6 @@ body {
   .main__gallery--heading-desktop {
     display: block;
     text-align: start;
-  }
-}
-
-.main__gallery--img {
-  margin-bottom: 36px;
-}
-@media screen and (min-width: 1024px) {
-  .main__gallery--img {
-    margin-bottom: 0;
   }
 }
 
@@ -1880,6 +1874,10 @@ body {
   .footer__gradient {
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
   }
+}
+
+.footer__map-contact {
+  padding-bottom: 2px;
 }
 
 /* Slider */
