@@ -371,210 +371,6 @@ body {
   }
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
-}
-
-/* Лента слайдов */
-.slick-track {
-  display: flex;
-}
-
-/* Слайд */
-.slick-slide {
-  min-width: 320px;
-  margin-right: 20px;
-}
-@media screen and (min-width: 768px) {
-  .slick-slide {
-    min-width: 730px;
-    margin-right: 40px;
-  }
-}
-
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
-.slider .slick-arrow.slick-prev {
-  background-image: url("../img/slide-arrow-left.svg");
-  left: 13px;
-}
-@media screen and (min-width: 1024px) {
-  .slider .slick-arrow.slick-prev {
-    background-image: url("../img/slide-arrow-left-desktop.svg");
-    left: 1px;
-  }
-}
-
-/* Стрелка вправо */
-.slider .slick-arrow.slick-next {
-  right: 12px;
-  background-image: url("../img/slide-arrow-right.svg");
-}
-@media screen and (min-width: 1024px) {
-  .slider .slick-arrow.slick-next {
-    background-image: url("../img/slide-arrow-right-desktop.svg");
-    right: 742px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .slider .slick-arrow.slick-next {
-    right: 963px;
-  }
-}
-
-.slider {
-  position: relative;
-  max-width: 340px;
-  margin: 0 auto;
-  margin-bottom: 27px;
-}
-@media screen and (min-width: 768px) {
-  .slider {
-    max-width: 730px;
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .slider {
-    max-width: 1236px;
-    margin-bottom: 90px;
-  }
-}
-
-.slider .slick-arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 103px;
-  z-index: 10;
-  font-size: 0;
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media screen and (min-width: 768px) {
-  .slider .slick-arrow {
-    top: 239px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .slider .slick-arrow {
-    width: 42px;
-    height: 14px;
-    background: transparent;
-    top: 97.9%;
-  }
-}
-
-.slider .slick-disabled {
-  opacity: 0.4;
-}
-
-.slider__item {
-  text-align: center;
-  display: flex;
-}
-
-@media screen and (min-width: 1024px) {
-  .slider .slick-dots li {
-    list-style: none;
-    margin-right: 18px;
-    cursor: pointer;
-  }
-  .slider .slick-dots li:nth-last-of-type(1) {
-    margin-right: 0;
-  }
-}
-
-.slider .slick-dots {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .slider .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 96.9%;
-    left: 71px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .slider .slick-dots button {
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .slider .slick-dots li.slick-active button {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-}
-
-.slider__item-link {
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
-  font-family: "Yeseva One";
-  margin-right: 60px;
-  position: relative;
-}
-.slider__item-link:nth-last-of-type(1) {
-  margin-right: 0;
-}
-
-@media screen and (min-width: 320px) {
-  .slider__item-link-block {
-    display: none;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .slider__item-link-block {
-    display: block;
-    margin-bottom: 49px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 54px;
-  }
-}
-
-.slider__item-link-active {
-  color: #e3b873;
-}
-.slider__item-link-active::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  transform: translate(0, 0) rotate(360deg);
-  background-color: #e3b873;
-  position: absolute;
-  /* right: 16px; */
-  border-radius: 30px;
-  top: 22px;
-}
-
 .main {
   flex: 1 1 auto;
 }
@@ -2061,4 +1857,208 @@ body {
   .footer__gradient {
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
   }
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+.slick-slide {
+  min-width: 320px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .slick-slide {
+    min-width: 730px;
+    margin-right: 40px;
+  }
+}
+
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.slider .slick-arrow.slick-prev {
+  background-image: url("../img/slide-arrow-left.svg");
+  left: 13px;
+}
+@media screen and (min-width: 1024px) {
+  .slider .slick-arrow.slick-prev {
+    background-image: url("../img/slide-arrow-left-desktop.svg");
+    left: 1px;
+  }
+}
+
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+  right: 12px;
+  background-image: url("../img/slide-arrow-right.svg");
+}
+@media screen and (min-width: 1024px) {
+  .slider .slick-arrow.slick-next {
+    background-image: url("../img/slide-arrow-right-desktop.svg");
+    right: 742px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .slider .slick-arrow.slick-next {
+    right: 963px;
+  }
+}
+
+.slider {
+  position: relative;
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    max-width: 730px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider {
+    max-width: 1236px;
+    margin-bottom: 90px;
+  }
+}
+
+.slider .slick-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 103px;
+  z-index: 10;
+  font-size: 0;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .slider .slick-arrow {
+    top: 239px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider .slick-arrow {
+    width: 42px;
+    height: 14px;
+    background: transparent;
+    top: 97.9%;
+  }
+}
+
+.slider .slick-disabled {
+  opacity: 0.4;
+}
+
+.slider__item {
+  text-align: center;
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots li {
+    list-style: none;
+    margin-right: 18px;
+    cursor: pointer;
+  }
+  .slider .slick-dots li:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+}
+
+.slider .slick-dots {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 96.9%;
+    left: 71px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .slider .slick-dots li.slick-active button {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.slider__item-link {
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Yeseva One";
+  margin-right: 60px;
+  position: relative;
+}
+.slider__item-link:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .slider__item-link-block {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider__item-link-block {
+    display: block;
+    margin-bottom: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 54px;
+  }
+}
+
+.slider__item-link-active {
+  color: #e3b873;
+}
+.slider__item-link-active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  transform: translate(0, 0) rotate(360deg);
+  background-color: #e3b873;
+  position: absolute;
+  /* right: 16px; */
+  border-radius: 30px;
+  top: 22px;
 }
