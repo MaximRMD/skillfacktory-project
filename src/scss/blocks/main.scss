@@ -955,6 +955,9 @@
     left: 0;
     top: 0;
     z-index: 10;
+    @include not-desktop {
+        justify-content: center;
+    }
 }
 
 .main__gallery-img-flex {

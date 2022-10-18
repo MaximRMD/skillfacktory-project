@@ -1,544 +1,522 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap&_v=20221018200652"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>
-    <script src="js/app.min.js" defer></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20221018200652">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221018200652" defer></script>
+    <script src="js/app.min.js?_v=20221018200652" defer></script>
     <title>Сайт визитка</title>
 </head>
 
 <body class="body">
     <div class="wrapper">
         <header class="header">
-            <div class="header__block">
-                <div class="header__block--wrap container">
-                    <a href="index.html" class="header__logo-text">IC "Repair Design Project"</a>
-                    <ul class="header__nav">
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Projects</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Measurement</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Team</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Reviews</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Contacts</a></li>
-                    </ul>
-                    <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
-                    <button href="#main__map" class="header__button-call header__button--color button">Request a
-                        call</button>
-                </div>
-            </div>
-            <div class="header__content">
-                <div class="header__gradient gradient"></div>
-                <div class="header__content-block container">
-                    <h1 class="header__heading title"><span class="header__span-heading">Turnkey Repair in the
-                            city of</span></span> Rostov-on-Don</h1>
-                    <p class="header__subtitle">Get ready-made turnkey repairs on time
-                        with&nbsp;work&nbsp;time saving up to 45 days and
-                        20% from cost of materials due to the organization of work
-
-                    </p>
-                    <div class="header__button-block">
-                        <button class="header__button header__button--color button">Calculate the cost</button>
-                        <button
-                            class="header__button button header__button--background header__button-phone">Application</button>
-                        <button class="header__button button header__button--background header__button-desktop">Submit
-                            your
-                            application</button>
-                    </div>
-
-                </div>
-                <picture>
-                    <source srcset="img/header-fon-desktop@1x.jpg 1x, img/header-fon-desktop@2x.jpg 2x" type="image/jpg"
-                        media="(min-width: 1024px)">
-                    <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
-                media="(min-width: 660px)"> -->
-                    <source srcset="img/header-fon@1x.jpg 1x, img/header-fon@2x.jpg 2x" type="image/jpg"
-                        media="(min-width: 320px)">
-                    <img src="img/header-fon@1x.jpg" alt="Мебель" class="header__img">
-                </picture>
-            </div>
-        </header>
-        <main class="main">
-            <section class="main__wrapper">
-                <div class="main__gallery container">
-                    <div class="main__gallery--heading main__gallery--heading-mobile">
-                        <h2 class="main__gallery--title title">Completed projects</h2>
-                        <p class="main__gallery--subtitle">Only a small part of the work performed by our
-                            company is presented
-                            on the site. For 14 years on in the construction market we have made happy more than
-                            1000
-                            families
-                        </p>
-                    </div>
-                    <div class="slider">
-                        <div class="slider__item">
-                            <div class="slider__item-link-block">
-                                <a href="#" class="slider__item-link slider__item-link-active">Rostov-on-Don,
-                                    Admiral</a>
-                                <a href="#" class="slider__item-link">Sochi Thieves</a>
-                                <a href="#" class="slider__item-link">Rostov-on-Don Patriotic</a>
-                            </div>
-                            <div class="main__gallery-wrapp">
-                                <div class="main__gallery--img">
-                                    <picture>
-                                        <source
-                                            srcset="img/interier-white-desktop@1x.jpg 1x, img/interier-white-desktop@2x.jpg 2x"
-                                            type="image/jpg" media="(min-width: 1024px)">
-                                        <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x"
-                                    type="image/jpg" media="(min-width: 660px)"> -->
-                                        <source srcset="img/interier-white@1x.jpg 1x, img/interier-white@2x.jpg 2x"
-                                            type="image/jpg" media="(min-width: 320px)">
-                                        <img class="main__gallery--slider" src="img/interier-white@1x.jpg"
-                                            alt="Приемная">
-                                    </picture>
-                                </div>
-
-                                <div class="main__specifications">
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">City:</h3>
-                                        <p class="main__specifications-subtitle main__specifications-subtitle--width">
-                                            Rostov-on-Don
-                                            LCD admiral</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">apartment area:</h3>
-                                        <p class="main__specifications-subtitle">81 m2</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">Repair time:</h3>
-                                        <p class="main__specifications-subtitle">3.5 months</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">Repair Cost:</h3>
-                                        <p class="main__specifications-subtitle">Upon request</p>
-                                    </div>
-                                </div>
-                                <div class="main__gallery--heading main__gallery--heading-desktop">
-                                    <h2 class="main__gallery--title title">Completed projects</h2>
-                                    <p class="main__gallery--subtitle main__subtitle-desktop-slider">Only a small part
-                                        of the
-                                        work performed by
-                                        our company is presented on the site. For 14 years on in the construction
-                                        market&nbsp;we&nbsp;have&nbsp;made&nbsp;happy more than 1000 families
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__item-link-block">
-                                <a href="#" class="slider__item-link slider__item-link-active">Rostov-on-Don,
-                                    Admiral</a>
-                                <a href="#" class="slider__item-link">Sochi Thieves</a>
-                                <a href="#" class="slider__item-link">Rostov-on-Don Patriotic</a>
-                            </div>
-                            <div class="main__gallery-wrapp">
-                                <div class="main__gallery--img">
-                                    <picture>
-                                        <source
-                                            srcset="img/interier-guests-desktop@1x.jpg 1x, img/interier-guests-desktop@2x.jpg 2x"
-                                            type="image/jpg" media="(min-width: 1024px)">
-                                        <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
-                                media="(min-width: 660px)">  -->
-                                        <source srcset="img/interier-guests@1x.jpg 1x, img/interier-guests@2x.jpg 2x"
-                                            type="image/jpg" media="(min-width: 320px)">
-                                        <img class="main__gallery--slider" src="img/interier-guests@1x.jpg"
-                                            alt="Гостинная">
-                                    </picture>
-                                </div>
-                                <div class="main__specifications">
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">City:</h3>
-                                        <p class="main__specifications-subtitle main__specifications-subtitle--width">
-                                            Rostov-on-Don
-                                            LCD admiral</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">apartment area:</h3>
-                                        <p class="main__specifications-subtitle">89 m2</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">Repair time:</h3>
-                                        <p class="main__specifications-subtitle">4.5 months</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">Repair Cost:</h3>
-                                        <p class="main__specifications-subtitle">Upon request</p>
-                                    </div>
-                                </div>
-                                <div class="main__gallery--heading main__gallery--heading-desktop">
-                                    <h2 class="main__gallery--title title">Completed projects</h2>
-                                    <p class="main__gallery--subtitle main__subtitle-desktop-slider">Only a small part
-                                        of the
-                                        work performed by
-                                        our company is presented on the site. For 14 years on in the construction
-                                        market&nbsp;we&nbsp;have&nbsp;made&nbsp;happy more than 1000 families
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__item-link-block">
-                                <a href="#" class="slider__item-link slider__item-link-active">Rostov-on-Don,
-                                    Admiral</a>
-                                <a href="#" class="slider__item-link">Sochi Thieves</a>
-                                <a href="#" class="slider__item-link">Rostov-on-Don Patriotic</a>
-                            </div>
-                            <div class="main__gallery-wrapp">
-                                <div class="main__gallery--img">
-                                    <picture>
-                                        <source
-                                            srcset="img/interier-office-desktop@1x.jpg 1x, img/interier-office-desktop@2x.jpg 2x"
-                                            type="image/jpg" media="(min-width: 1024px)">
-                                        <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
-                                    media="(min-width: 660px)"> -->
-                                        <source srcset="img/interier-office@1x.jpg 1x, img/interier-office@2x.jpg 2x"
-                                            type="image/jpg" media="(min-width: 320px)">
-                                        <img class="main__gallery--slider" src="img/interier-office@1x.jpg"
-                                            alt="Рабочая комната">
-                                    </picture>
-                                </div>
-
-                                <div class="main__specifications">
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">City:</h3>
-                                        <p class="main__specifications-subtitle main__specifications-subtitle--width">
-                                            Rostov-on-Don
-                                            LCD admiral</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">apartment area:</h3>
-                                        <p class="main__specifications-subtitle">94 m2</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">Repair time:</h3>
-                                        <p class="main__specifications-subtitle">5.3 months</p>
-                                    </div>
-                                    <div class="main__specifications-blocks">
-                                        <h3 class="main__specifications-title title">Repair Cost:</h3>
-                                        <p class="main__specifications-subtitle">Upon request</p>
-                                    </div>
-                                </div>
-                                <div class="main__gallery--heading main__gallery--heading-desktop">
-                                    <h2 class="main__gallery--title title">Completed projects</h2>
-                                    <p class="main__gallery--subtitle main__subtitle-desktop-slider">Only a small part
-                                        of the
-                                        work performed by
-                                        our company is presented on the site. For 14 years on in the construction
-                                        market&nbsp;we&nbsp;have&nbsp;made&nbsp;happy more than 1000 families
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__fichi-desktop-none">
-                        <div class="main__fichi">
-                            <h2 class="main__fichi-title title">Online control</h2>
-                            <img class="main__fichi-img" src="img/camera.svg" alt="Камера наружного наблюдения">
-                        </div>
-
-                        <div class="main__fichi-video" data-src="https://www.youtube.com/embed/85vD_4U62y8?autoplay=1">
-                            <div class="flex">
-                                <div class="main__fichi-video-play">
-                                    <svg class="main__fichi-video-svg" viewBox="0 0 10 11"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.37646 5.71765L0.235288 10.9953L0.235289 0.439992L9.37646 5.71765Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main__fichi-line-wrapp">
-                            <img class="main__fichi-line-svg" src="img/line-video-desktop.svg" alt="">
-                        </div>
-
-
-                        <div class="main__fichi-description--block">
-                            <p class="main__fichi-description">At each facility, a camera is installed that broadcasts
-                                the
-                                progress
-                                of work on the clock. At any time, you can go to our website and monitor the progress of
-                                work in
-                                your apartment. Y
-                                ou can watch the live broadcast from one of our facilities!
-                                Leave a request below and you will receive a link to the broadcast.</p>
-                        </div>
-
-                        <form class="main__form-user main__form-fieldset-desktop" action="#" method="post"
-                            enctype="multipart/form-data">
-                            <fieldset class="main__form-fieldset ">
-                                <p class="main__form-comtact main__form-comtact-desktop">
-                                    <label class="main__form-label main__form-label-desktop" for="username">Name</label>
-                                    <input
-                                        class="main__form-input main__form-input-border-desktop main__form-input-desktop"
-                                        id="username" type="text" name="username" placeholder="What is your name:">
-                                </p>
-                                <p class="main__form-comtact main__form-comtact-desktop">
-                                    <label class="main__form-label main__form-label-desktop"
-                                        for="usertel">Number</label>
-                                    <input
-                                        class="main__form-input main__form-input-border-desktop main__form-input-desktop"
-                                        id="usertel" type="tel" name="usertel" placeholder="Your phone number:">
-                                </p>
-                                <div class="main__form-button--wrapper main__form-button--desktop">
-                                    <button class="main__form-button--color button">Sumbit</button>
-                                </div>
-                            </fieldset>
-                            <label for="check" class="main__form-check option">
-                                <input id="check" type="checkbox" class="main__form-checkbox">
-                                <span class="main__checkbox"></span>
-                                <span class="main__form-text-check">I
-                                    agree to the processing of personal
-                                    data</span>
-                            </label>
-                        </form>
-                    </div>
-
-                </div>
-            </section>
-            <div class="main__form-button--wrapper main__form-button--mobile container">
-                <button class="main__form-button--color button">Sumbit</button>
-            </div>
-
-            <section class="main__catalog-section container">
-
-                <div class="main__fichi-wrap-desktop">
-                    <div class="main__fichi">
-                        <h2 class="main__fichi-title title">Online control</h2>
-                        <img class="main__fichi-img" src="img/camera.svg" alt="Камера наружного наблюдения">
-                    </div>
-
-                    <div class="main__fichi-video" data-src="https://www.youtube.com/embed/85vD_4U62y8?autoplay=1">
-                        <div class="flex">
-                            <div class="main__fichi-video-play">
-                                <svg class="main__fichi-video-svg" viewBox="0 0 10 11"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.37646 5.71765L0.235288 10.9953L0.235289 0.439992L9.37646 5.71765Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__fichi-line-wrapp">
-                        <img class="main__fichi-line-svg" src="img/line-video-desktop.svg" alt="">
-                    </div>
-
-
-                    <div class="main__fichi-description--block">
-                        <p class="main__fichi-description">At each facility, a camera is installed that broadcasts the
-                            progress
-                            of work on the clock. At any time, you can go to our website and monitor the progress of
-                            work in
-                            your apartment. Y
-                            ou can watch the live broadcast from one of our facilities!
-                            Leave a request below and you will receive a link to the broadcast.</p>
-                    </div>
-
-                    <form class="main__form-user main__form-fieldset-desktop" action="#" method="post"
-                        enctype="multipart/form-data">
-                        <fieldset class="main__form-fieldset ">
-                            <p class="main__form-comtact main__form-comtact-desktop">
-                                <label class="main__form-label main__form-label-desktop" for="username">Name</label>
-                                <input class="main__form-input main__form-input-border-desktop main__form-input-desktop"
-                                    id="username" type="text" name="username" placeholder="What is your name:">
-                            </p>
-                            <p class="main__form-comtact main__form-comtact-desktop">
-                                <label class="main__form-label main__form-label-desktop" for="usertel">Number</label>
-                                <input class="main__form-input main__form-input-border-desktop main__form-input-desktop"
-                                    id="usertel" type="tel" name="usertel" placeholder="Your phone number:">
-                            </p>
-                            <div class="main__form-button--wrapper main__form-button--desktop">
-                                <button class="main__form-button--color button">Sumbit</button>
-                            </div>
-                        </fieldset>
-                        <label for="check" class="main__form-check main__form-check-video option">
-                            <input id="check" type="checkbox" class="main__form-checkbox">
-                            <span class="main__checkbox"></span>
-                            <span class="main__form-text-check">I
-                                agree to the processing of personal
-                                data</span>
-                        </label>
-                    </form>
-                </div>
-
-                <h2 class="main__catalog-heading">Types of repair</h2>
-                <div class="main__catalog-decor-line">
-                    <img class="main__catalog-svg-camera" src="img/repair-catalog.svg" alt="Камера">
-                </div>
-
-                <div class="main__catalog-wrapp">
-                    <div class="main__catalog-blok">
-                        <picture>
-                            <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
-                    media="(min-width: 1200px)"> -->
-                            <source srcset="img/clear-room-desktop@1x.jpg, img/clear-room-desktop@2x.jpg 2x"
-                                type="image/jpg" media="(min-width: 660px)">
-                            <source srcset="img/clear-room@1x.jpg 1x, img/clear-room@2x.jpg 2x" type="image/jpg"
-                                media="(min-width: 320px)">
-                            <img class="main__catalog-img" src="img/clear-room@1x.jpg" alt="Комната без мебели">
-                        </picture>
-                        <div class="main__catalog-price">
-                            <div class="main__catalog-price-wrap">
-                                <p class="main__catalog-heading-price">Redecorating</p>
-                                <ul class="main__catalog-item-price">
-                                    <li class="main__catalog-list-price">Dismantling of old coatings</li>
-                                    <li class="main__catalog-list-price">Wallpapering</li>
-                                    <li class="main__catalog-list-price">Painting walls and ceilings</li>
-                                    <li class="main__catalog-list-price">Laying flooring</li>
-                                    <li class="main__catalog-list-price">Replacing plumbing</li>
-                                    <li class="main__catalog-list-price">Replacing sockets and switches</li>
-                                    <li class="main__catalog-list-price">Replacing doors</li>
-                                </ul>
-                            </div>
-
-                            <button class="main__catalog-button-price button button-gold">From 900 rub/m2</button>
-                        </div>
-                    </div>
-
-                    <div class="main__catalog-blok">
-                        <picture>
-                            <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
-                    media="(min-width: 1200px)"> -->
-                            <source srcset="img/overhaul-room-desktop@1x.jpg 1x, img/overhaul-room-desktop@2x.jpg 2x"
-                                type="image/jpg" media="(min-width: 660px)">
-                            <source srcset="img/overhaul-room@1x.jpg 1x, img/overhaul-room@2x.jpg 2x" type="image/jpg"
-                                media="(min-width: 320px)">
-                            <img class="main__catalog-img" src="img/overhaul-room@1x.jpg" alt="Комната с мебелью">
-                        </picture>
-                        <div class="main__catalog-price">
-                            <div class="main__catalog-price-wrap">
-                                <p class="main__catalog-heading-price">Overhaul</p>
-                                <ul class="main__catalog-item-price">
-                                    <li class="main__catalog-list-price">Dismantling of old coatings</li>
-                                    <li class="main__catalog-list-price">Wallpapering</li>
-                                    <li class="main__catalog-list-price">Painting walls and ceilings</li>
-                                    <li class="main__catalog-list-price">Laying flooring</li>
-                                    <li class="main__catalog-list-price">Replacing plumbing</li>
-                                    <li class="main__catalog-list-price">Replacing sockets and switches</li>
-                                    <li class="main__catalog-list-price">Replacing doors</li>
-                                </ul>
-                            </div>
-
-                            <button class="main__catalog-button-price button button-gold">From 1800 rub/m2</button>
-                        </div>
-                    </div>
-
-                    <div class="main__catalog-blok">
-                        <picture>
-                            <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
-                    media="(min-width: 1200px)"> -->
-                            <source srcset="img/designer-room-desktop@1x.jpg 1x, img/designer-room-desktop@2x.jpg 2x"
-                                type="image/jpg" media="(min-width: 660px)">
-                            <source srcset="img/designer-room@1x.jpg 1x, img/designer-room@2x.jpg 2x" type="image/jpg"
-                                media="(min-width: 320px)">
-                            <img class="main__catalog-img" src="img/designer-room@1x.jpg"
-                                alt="Комната с дизайнерскими решениями">
-                        </picture>
-                        <div class="main__catalog-price">
-                            <div class="main__catalog-price-wrap">
-                                <p class="main__catalog-heading-price">Designer Repair</p>
-                                <ul class="main__catalog-item-price">
-                                    <li class="main__catalog-list-price">Dismantling of old coatings</li>
-                                    <li class="main__catalog-list-price">Wallpapering</li>
-                                    <li class="main__catalog-list-price">Painting walls and ceilings</li>
-                                    <li class="main__catalog-list-price">Laying flooring</li>
-                                    <li class="main__catalog-list-price">Replacing plumbing</li>
-                                    <li class="main__catalog-list-price">Replacing sockets and switches</li>
-                                    <li class="main__catalog-list-price">Replacing doors</li>
-                                </ul>
-                            </div>
-
-                            <button class="main__catalog-button-price button button-gold">From 4000 rub/m2</button>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="main__application">
-                <img class="main__aplication-img-desktop" src="img/application-block-desktop@1x.png" alt="">
-                <div class="main__application-wrapp container">
-                    <div class="main__application-stages">
-                        <ul class="main__application-list">
-                            <li class="main__application-item">
-                                <span class="main__application-span">01</span>
-                                <p class="main__application-paragraph">Our
-                                    specialist will arrive for measurements per day
-                                    contact, or appoint a date convenient for you</p>
-                            </li>
-                            <li class="main__application-item">
-                                <span class="main__application-span">02</span>
-                                <p class="main__application-paragraph">Free
-                                    metering</p>
-                            </li>
-                            <li class="main__application-item">
-                                <span class="main__application-span">03</span>
-                                <p class="main__application-paragraph">Free
-                                    consultation</p>
-                            </li>
-                            <li class="main__application-item">
-                                <span class="main__application-span">04</span>
-                                <p class="main__application-paragraph">Get a cost estimate and
-                                    the&nbsp;timing&nbsp;of&nbsp;your&nbsp;future&nbsp;repairs</p>
-                            </li>
-                        </ul>
-                        <!-- </div> -->
-                    </div>
-                    <div class="main__application-form">
-                        <form class="main__application-form-user" action="#" method="post"
-                            enctype="multipart/form-data">
-                            <h2 class="main__application-form-heading">Leave a request for free
-                                departure of the measurer</h2>
-                            <fieldset class="main__application-form-fieldset">
-                                <p class="main__form-comtact main__application-form-comtact">
-                                    <label class="main__form-label" for="username">Name</label>
-                                    <input class="main__form-input" tabindex="5" id="username" type="text"
-                                        name="username" placeholder="What is your name:">
-                                </p>
-                                <p class="main__form-comtact main__application-form-comtact">
-                                    <label class="main__form-label" for="usertel">Phone</label>
-                                    <input class="main__form-input" tabindex="6" id="usertel" type="tel" name="usertel"
-                                        placeholder="Your phone number:">
-                                </p>
-                                <p class="main__form-comtact main__application-form-comtact">
-                                    <label class="main__form-label" for="usertel">Email</label>
-                                    <input class="main__form-input" tabindex="6" id="usertel" type="tel" name="usertel"
-                                        placeholder="Your email">
-                                </p>
-                            </fieldset>
-
-                            <label for="check__form" class="main__form-check main__application-form-check option">
-                                <input id="check__form" type="checkbox" class="main__form-checkbox">
-                                <span class="main__checkbox"></span>
-                                <span class="main__form-text-check main__application-form-text-check">I
-                                    agree to the processing of personal
-                                    data</span>
-                            </label>
-                            <div
-                                class="main__form-button--wrapper main__application-form-button--wrapper main__form-button--desktop">
-                                <button
-                                    class="main__form-button--color main__application-form-button--color button">Call
-                                    the
-                                    measurer</button>
-                            </div>
-                        </form>
-                        <div class="main__application-pig-wrapp">
-                            <div class="main__application-pig">
-                                <img src="img/pig-application.svg" alt="">
-                            </div>
-                            <span class="main__application-pig-text">Help save 10 - 20% of the
-                                cost of materials</span>
-                        </div>
-
-                    </div>
-
-                </div>
+    <div class="header__block">
+        <div class="header__block--wrap container">
+            <a href="index.html" class="header__logo-text">IC "Repair Design Project"</a>
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Projects</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Measurement</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Team</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Reviews</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Contacts</a></li>
+            </ul>
+            <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
+            <button href="#main__map" class="header__button-call header__button--color button">Request a call</button>
+        </div>
     </div>
+    <div class="header__content">
+        <div class="header__gradient gradient"></div>
+        <div class="header__content-block container">
+            <h1 class="header__heading title"><span class="header__span-heading">Turnkey Repair in the
+                    city of</span></span> Rostov-on-Don</h1>
+            <p class="header__subtitle">Get ready-made turnkey repairs on time
+                with&nbsp;work&nbsp;time saving up to 45 days and
+                20% from cost of materials due to the organization of work
+
+            </p>
+            <div class="header__button-block">
+                <button class="header__button header__button--color button">Calculate the cost</button>
+                <button
+                    class="header__button button header__button--background header__button-phone">Application</button>
+                <button class="header__button button header__button--background header__button-desktop">Submit your
+                    application</button>
+            </div>
+
+        </div>
+        <picture>
+            <source srcset="img/header-fon-desktop@1x.jpg 1x, img/header-fon-desktop@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 1024px)">
+            <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 660px)"> -->
+            <source srcset="img/header-fon@1x.jpg 1x, img/header-fon@2x.jpg 2x" type="image/jpg"
+                media="(min-width: 320px)">
+            <img src="img/header-fon@1x.jpg" alt="Мебель" class="header__img">
+        </picture>
+    </div>
+</header>
+        <main class="main">
+    <section class="main__wrapper">
+        <div class="main__gallery container">
+            <div class="main__gallery--heading main__gallery--heading-mobile">
+                <h2 class="main__gallery--title title">Completed projects</h2>
+                <p class="main__gallery--subtitle">Only a small part of the work performed by our
+                    company is presented
+                    on the site. For 14 years on in the construction market we have made happy more than
+                    1000
+                    families
+                </p>
+            </div>
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="slider__item-link-block">
+                        <a href="#" class="slider__item-link slider__item-link-active">Rostov-on-Don, Admiral</a>
+                        <a href="#" class="slider__item-link">Sochi Thieves</a>
+                        <a href="#" class="slider__item-link">Rostov-on-Don Patriotic</a>
+                    </div>
+                    <div class="main__gallery-wrapp">
+                        <div class="main__gallery--img">
+                            <picture>
+                                <source
+                                    srcset="img/interier-white-desktop@1x.jpg 1x, img/interier-white-desktop@2x.jpg 2x"
+                                    type="image/jpg" media="(min-width: 1024px)">
+                                <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x"
+                                    type="image/jpg" media="(min-width: 660px)"> -->
+                                <source srcset="img/interier-white@1x.jpg 1x, img/interier-white@2x.jpg 2x"
+                                    type="image/jpg" media="(min-width: 320px)">
+                                <img class="main__gallery--slider" src="img/interier-white@1x.jpg" alt="Приемная">
+                            </picture>
+                        </div>
+
+                        <div class="main__specifications">
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">City:</h3>
+                                <p class="main__specifications-subtitle main__specifications-subtitle--width">
+                                    Rostov-on-Don
+                                    LCD admiral</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">apartment area:</h3>
+                                <p class="main__specifications-subtitle">81 m2</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">Repair time:</h3>
+                                <p class="main__specifications-subtitle">3.5 months</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">Repair Cost:</h3>
+                                <p class="main__specifications-subtitle">Upon request</p>
+                            </div>
+                        </div>
+                        <div class="main__gallery--heading main__gallery--heading-desktop">
+                            <h2 class="main__gallery--title title">Completed projects</h2>
+                            <p class="main__gallery--subtitle main__subtitle-desktop-slider">Only a small part of the
+                                work performed by
+                                our company is presented on the site. For 14 years on in the construction
+                                market&nbsp;we&nbsp;have&nbsp;made&nbsp;happy more than 1000 families
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-link-block">
+                        <a href="#" class="slider__item-link slider__item-link-active">Rostov-on-Don, Admiral</a>
+                        <a href="#" class="slider__item-link">Sochi Thieves</a>
+                        <a href="#" class="slider__item-link">Rostov-on-Don Patriotic</a>
+                    </div>
+                    <div class="main__gallery-wrapp">
+                        <div class="main__gallery--img">
+                            <picture>
+                                <source
+                                    srcset="img/interier-guests-desktop@1x.jpg 1x, img/interier-guests-desktop@2x.jpg 2x"
+                                    type="image/jpg" media="(min-width: 1024px)">
+                                <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+                                media="(min-width: 660px)">  -->
+                                <source srcset="img/interier-guests@1x.jpg 1x, img/interier-guests@2x.jpg 2x"
+                                    type="image/jpg" media="(min-width: 320px)">
+                                <img class="main__gallery--slider" src="img/interier-guests@1x.jpg" alt="Гостинная">
+                            </picture>
+                        </div>
+                        <div class="main__specifications">
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">City:</h3>
+                                <p class="main__specifications-subtitle main__specifications-subtitle--width">
+                                    Rostov-on-Don
+                                    LCD admiral</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">apartment area:</h3>
+                                <p class="main__specifications-subtitle">89 m2</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">Repair time:</h3>
+                                <p class="main__specifications-subtitle">4.5 months</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">Repair Cost:</h3>
+                                <p class="main__specifications-subtitle">Upon request</p>
+                            </div>
+                        </div>
+                        <div class="main__gallery--heading main__gallery--heading-desktop">
+                            <h2 class="main__gallery--title title">Completed projects</h2>
+                            <p class="main__gallery--subtitle main__subtitle-desktop-slider">Only a small part of the
+                                work performed by
+                                our company is presented on the site. For 14 years on in the construction
+                                market&nbsp;we&nbsp;have&nbsp;made&nbsp;happy more than 1000 families
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-link-block">
+                        <a href="#" class="slider__item-link slider__item-link-active">Rostov-on-Don, Admiral</a>
+                        <a href="#" class="slider__item-link">Sochi Thieves</a>
+                        <a href="#" class="slider__item-link">Rostov-on-Don Patriotic</a>
+                    </div>
+                    <div class="main__gallery-wrapp">
+                        <div class="main__gallery--img">
+                            <picture>
+                                <source
+                                    srcset="img/interier-office-desktop@1x.jpg 1x, img/interier-office-desktop@2x.jpg 2x"
+                                    type="image/jpg" media="(min-width: 1024px)">
+                                <!-- <source srcset="./img/panorama-tablet@x1.jpg 1x, ./img/panorama-tablet@2x.jpg 2x" type="image/jpg"
+                                    media="(min-width: 660px)"> -->
+                                <source srcset="img/interier-office@1x.jpg 1x, img/interier-office@2x.jpg 2x"
+                                    type="image/jpg" media="(min-width: 320px)">
+                                <img class="main__gallery--slider" src="img/interier-office@1x.jpg"
+                                    alt="Рабочая комната">
+                            </picture>
+                        </div>
+
+                        <div class="main__specifications">
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">City:</h3>
+                                <p class="main__specifications-subtitle main__specifications-subtitle--width">
+                                    Rostov-on-Don
+                                    LCD admiral</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">apartment area:</h3>
+                                <p class="main__specifications-subtitle">94 m2</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">Repair time:</h3>
+                                <p class="main__specifications-subtitle">5.3 months</p>
+                            </div>
+                            <div class="main__specifications-blocks">
+                                <h3 class="main__specifications-title title">Repair Cost:</h3>
+                                <p class="main__specifications-subtitle">Upon request</p>
+                            </div>
+                        </div>
+                        <div class="main__gallery--heading main__gallery--heading-desktop">
+                            <h2 class="main__gallery--title title">Completed projects</h2>
+                            <p class="main__gallery--subtitle main__subtitle-desktop-slider">Only a small part of the
+                                work performed by
+                                our company is presented on the site. For 14 years on in the construction
+                                market&nbsp;we&nbsp;have&nbsp;made&nbsp;happy more than 1000 families
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__fichi-desktop-none">
+                <div class="main__fichi">
+                    <h2 class="main__fichi-title title">Online control</h2>
+                    <img class="main__fichi-img" src="img/camera.svg" alt="Камера наружного наблюдения">
+                </div>
+
+                <div class="main__fichi-video" data-src="https://www.youtube.com/embed/85vD_4U62y8?autoplay=1">
+                    <div class="flex">
+                        <div class="main__fichi-video-play">
+                            <svg class="main__fichi-video-svg" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.37646 5.71765L0.235288 10.9953L0.235289 0.439992L9.37646 5.71765Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__fichi-line-wrapp">
+                    <img class="main__fichi-line-svg" src="img/line-video-desktop.svg" alt="">
+                </div>
+
+
+                <div class="main__fichi-description--block">
+                    <p class="main__fichi-description">At each facility, a camera is installed that broadcasts the
+                        progress
+                        of work on the clock. At any time, you can go to our website and monitor the progress of work in
+                        your apartment. Y
+                        ou can watch the live broadcast from one of our facilities!
+                        Leave a request below and you will receive a link to the broadcast.</p>
+                </div>
+
+                <form class="main__form-user main__form-fieldset-desktop" action="#" method="post"
+                    enctype="multipart/form-data">
+                    <fieldset class="main__form-fieldset ">
+                        <p class="main__form-comtact main__form-comtact-desktop">
+                            <label class="main__form-label main__form-label-desktop" for="username">Name</label>
+                            <input class="main__form-input main__form-input-border-desktop main__form-input-desktop"
+                                id="username" type="text" name="username" placeholder="What is your name:">
+                        </p>
+                        <p class="main__form-comtact main__form-comtact-desktop">
+                            <label class="main__form-label main__form-label-desktop" for="usertel">Number</label>
+                            <input class="main__form-input main__form-input-border-desktop main__form-input-desktop"
+                                id="usertel" type="tel" name="usertel" placeholder="Your phone number:">
+                        </p>
+                        <div class="main__form-button--wrapper main__form-button--desktop">
+                            <button class="main__form-button--color button">Sumbit</button>
+                        </div>
+                    </fieldset>
+                    <label for="check" class="main__form-check option">
+                        <input id="check" type="checkbox" class="main__form-checkbox">
+                        <span class="main__checkbox"></span>
+                        <span class="main__form-text-check">I
+                            agree to the processing of personal
+                            data</span>
+                    </label>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <div class="main__form-button--wrapper main__form-button--mobile container">
+        <button class="main__form-button--color button">Sumbit</button>
+    </div>
+
+    <section class="main__catalog-section container">
+
+        <div class="main__fichi-wrap-desktop">
+            <div class="main__fichi">
+                <h2 class="main__fichi-title title">Online control</h2>
+                <img class="main__fichi-img" src="img/camera.svg" alt="Камера наружного наблюдения">
+            </div>
+
+            <div class="main__fichi-video main__fichi-video-desktop"
+                data-src="https://www.youtube.com/embed/85vD_4U62y8?autoplay=1">
+                <div class="flex">
+                    <div class="main__fichi-video-play">
+                        <svg class="main__fichi-video-svg" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.37646 5.71765L0.235288 10.9953L0.235289 0.439992L9.37646 5.71765Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="main__fichi-line-wrapp">
+                <img class="main__fichi-line-svg" src="img/line-video-desktop.svg" alt="">
+            </div>
+
+
+            <div class="main__fichi-description--block">
+                <p class="main__fichi-description">At each facility, a camera is installed that broadcasts the progress
+                    of work on the clock. At any time, you can go to our website and monitor the progress of work in
+                    your apartment. Y
+                    ou can watch the live broadcast from one of our facilities!
+                    Leave a request below and you will receive a link to the broadcast.</p>
+            </div>
+
+            <form class="main__form-user main__form-fieldset-desktop" action="#" method="post"
+                enctype="multipart/form-data">
+                <fieldset class="main__form-fieldset ">
+                    <p class="main__form-comtact main__form-comtact-desktop">
+                        <label class="main__form-label main__form-label-desktop" for="username">Name</label>
+                        <input class="main__form-input main__form-input-border-desktop main__form-input-desktop"
+                            id="username" type="text" name="username" placeholder="What is your name:">
+                    </p>
+                    <p class="main__form-comtact main__form-comtact-desktop">
+                        <label class="main__form-label main__form-label-desktop" for="usertel">Number</label>
+                        <input class="main__form-input main__form-input-border-desktop main__form-input-desktop"
+                            id="usertel" type="tel" name="usertel" placeholder="Your phone number:">
+                    </p>
+                    <div class="main__form-button--wrapper main__form-button--desktop">
+                        <button class="main__form-button--color button">Sumbit</button>
+                    </div>
+                </fieldset>
+                <label for="check" class="main__form-check main__form-check-video option">
+                    <input id="check" type="checkbox" class="main__form-checkbox">
+                    <span class="main__checkbox"></span>
+                    <span class="main__form-text-check">I
+                        agree to the processing of personal
+                        data</span>
+                </label>
+            </form>
+        </div>
+
+        <h2 class="main__catalog-heading">Types of repair</h2>
+        <div class="main__catalog-decor-line">
+            <img class="main__catalog-svg-camera" src="img/repair-catalog.svg" alt="Камера">
+        </div>
+
+        <div class="main__catalog-wrapp">
+            <div class="main__catalog-blok">
+                <picture>
+                    <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
+                    media="(min-width: 1200px)"> -->
+                    <source srcset="img/clear-room-desktop@1x.jpg, img/clear-room-desktop@2x.jpg 2x" type="image/jpg"
+                        media="(min-width: 660px)">
+                    <source srcset="img/clear-room@1x.jpg 1x, img/clear-room@2x.jpg 2x" type="image/jpg"
+                        media="(min-width: 320px)">
+                    <img class="main__catalog-img" src="img/clear-room@1x.jpg" alt="Комната без мебели">
+                </picture>
+                <div class="main__catalog-price">
+                    <div class="main__catalog-price-wrap">
+                        <p class="main__catalog-heading-price">Redecorating</p>
+                        <ul class="main__catalog-item-price">
+                            <li class="main__catalog-list-price">Dismantling of old coatings</li>
+                            <li class="main__catalog-list-price">Wallpapering</li>
+                            <li class="main__catalog-list-price">Painting walls and ceilings</li>
+                            <li class="main__catalog-list-price">Laying flooring</li>
+                            <li class="main__catalog-list-price">Replacing plumbing</li>
+                            <li class="main__catalog-list-price">Replacing sockets and switches</li>
+                            <li class="main__catalog-list-price">Replacing doors</li>
+                        </ul>
+                    </div>
+
+                    <button class="main__catalog-button-price button button-gold">From 900 rub/m2</button>
+                </div>
+            </div>
+
+            <div class="main__catalog-blok">
+                <picture>
+                    <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
+                    media="(min-width: 1200px)"> -->
+                    <source srcset="img/overhaul-room-desktop@1x.jpg 1x, img/overhaul-room-desktop@2x.jpg 2x"
+                        type="image/jpg" media="(min-width: 660px)">
+                    <source srcset="img/overhaul-room@1x.jpg 1x, img/overhaul-room@2x.jpg 2x" type="image/jpg"
+                        media="(min-width: 320px)">
+                    <img class="main__catalog-img" src="img/overhaul-room@1x.jpg" alt="Комната с мебелью">
+                </picture>
+                <div class="main__catalog-price">
+                    <div class="main__catalog-price-wrap">
+                        <p class="main__catalog-heading-price">Overhaul</p>
+                        <ul class="main__catalog-item-price">
+                            <li class="main__catalog-list-price">Dismantling of old coatings</li>
+                            <li class="main__catalog-list-price">Wallpapering</li>
+                            <li class="main__catalog-list-price">Painting walls and ceilings</li>
+                            <li class="main__catalog-list-price">Laying flooring</li>
+                            <li class="main__catalog-list-price">Replacing plumbing</li>
+                            <li class="main__catalog-list-price">Replacing sockets and switches</li>
+                            <li class="main__catalog-list-price">Replacing doors</li>
+                        </ul>
+                    </div>
+
+                    <button class="main__catalog-button-price button button-gold">From 1800 rub/m2</button>
+                </div>
+            </div>
+
+            <div class="main__catalog-blok">
+                <picture>
+                    <!-- <source srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x" type="image/jpg"
+                    media="(min-width: 1200px)"> -->
+                    <source srcset="img/designer-room-desktop@1x.jpg 1x, img/designer-room-desktop@2x.jpg 2x"
+                        type="image/jpg" media="(min-width: 660px)">
+                    <source srcset="img/designer-room@1x.jpg 1x, img/designer-room@2x.jpg 2x" type="image/jpg"
+                        media="(min-width: 320px)">
+                    <img class="main__catalog-img" src="img/designer-room@1x.jpg"
+                        alt="Комната с дизайнерскими решениями">
+                </picture>
+                <div class="main__catalog-price">
+                    <div class="main__catalog-price-wrap">
+                        <p class="main__catalog-heading-price">Designer Repair</p>
+                        <ul class="main__catalog-item-price">
+                            <li class="main__catalog-list-price">Dismantling of old coatings</li>
+                            <li class="main__catalog-list-price">Wallpapering</li>
+                            <li class="main__catalog-list-price">Painting walls and ceilings</li>
+                            <li class="main__catalog-list-price">Laying flooring</li>
+                            <li class="main__catalog-list-price">Replacing plumbing</li>
+                            <li class="main__catalog-list-price">Replacing sockets and switches</li>
+                            <li class="main__catalog-list-price">Replacing doors</li>
+                        </ul>
+                    </div>
+
+                    <button class="main__catalog-button-price button button-gold">From 4000 rub/m2</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main__application">
+        <picture><source srcset="img/application-block-desktop@1x.webp" type="image/webp"><img class="main__aplication-img-desktop" src="img/application-block-desktop@1x.png" alt=""></picture>
+        <div class="main__application-wrapp container">
+            <div class="main__application-stages">
+                <ul class="main__application-list">
+                    <li class="main__application-item">
+                        <span class="main__application-span">01</span>
+                        <p class="main__application-paragraph">Our
+                            specialist will arrive for measurements per day
+                            contact, or appoint a date convenient for you</p>
+                    </li>
+                    <li class="main__application-item">
+                        <span class="main__application-span">02</span>
+                        <p class="main__application-paragraph">Free
+                            metering</p>
+                    </li>
+                    <li class="main__application-item">
+                        <span class="main__application-span">03</span>
+                        <p class="main__application-paragraph">Free
+                            consultation</p>
+                    </li>
+                    <li class="main__application-item">
+                        <span class="main__application-span">04</span>
+                        <p class="main__application-paragraph">Get a cost estimate and
+                            the&nbsp;timing&nbsp;of&nbsp;your&nbsp;future&nbsp;repairs</p>
+                    </li>
+                </ul>
+                <!-- </div> -->
+            </div>
+            <div class="main__application-form">
+                <form class="main__application-form-user" action="#" method="post" enctype="multipart/form-data">
+                    <h2 class="main__application-form-heading">Leave a request for free
+                        departure of the measurer</h2>
+                    <fieldset class="main__application-form-fieldset">
+                        <p class="main__form-comtact main__application-form-comtact">
+                            <label class="main__form-label" for="username">Name</label>
+                            <input class="main__form-input" tabindex="5" id="username" type="text" name="username"
+                                placeholder="What is your name:">
+                        </p>
+                        <p class="main__form-comtact main__application-form-comtact">
+                            <label class="main__form-label" for="usertel">Phone</label>
+                            <input class="main__form-input" tabindex="6" id="usertel" type="tel" name="usertel"
+                                placeholder="Your phone number:">
+                        </p>
+                        <p class="main__form-comtact main__application-form-comtact">
+                            <label class="main__form-label" for="usertel">Email</label>
+                            <input class="main__form-input" tabindex="6" id="usertel" type="tel" name="usertel"
+                                placeholder="Your email">
+                        </p>
+                    </fieldset>
+
+                    <label for="check__form" class="main__form-check main__application-form-check option">
+                        <input id="check__form" type="checkbox" class="main__form-checkbox">
+                        <span class="main__checkbox"></span>
+                        <span class="main__form-text-check main__application-form-text-check">I
+                            agree to the processing of personal
+                            data</span>
+                    </label>
+                    <div
+                        class="main__form-button--wrapper main__application-form-button--wrapper main__form-button--desktop">
+                        <button class="main__form-button--color main__application-form-button--color button">Call the
+                            measurer</button>
+                    </div>
+                </form>
+                <div class="main__application-pig-wrapp">
+                    <div class="main__application-pig">
+                        <img src="img/pig-application.svg" alt="">
+                    </div>
+                    <span class="main__application-pig-text">Help save 10 - 20% of the
+                        cost of materials</span>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
     </section>
 
     <section class="main__galery-desktop">
@@ -636,7 +614,7 @@
                 <div class="main__reviews-cart">
                     <div class="main__reviews-avatar-block">
                         <span class="main__reviews-avatar">
-                            <img width="76" height="76" src="img/avatar-fedosova.jpg" alt="">
+                            <picture><source srcset="img/avatar-fedosova.webp" type="image/webp"><img width="76" height="76" src="img/avatar-fedosova.jpg" alt=""></picture>
                         </span>
                         <p class="main__reviews-avatar-name">Fedosova Maria
                             Konstantinovna</p>
@@ -673,7 +651,7 @@
                 <div class="main__reviews-cart">
                     <div class="main__reviews-avatar-block">
                         <span class="main__reviews-avatar">
-                            <img width="76" height="76" src="img/avatar-afanasyev.png" alt="">
+                            <picture><source srcset="img/avatar-afanasyev.webp" type="image/webp"><img width="76" height="76" src="img/avatar-afanasyev.png" alt=""></picture>
                         </span>
                         <p class="main__reviews-avatar-name">Afanasyev Sergey Alexandrovich</p>
                     </div>
@@ -782,7 +760,8 @@
                                     media="(min-width: 660px)">  -->
                                     <source srcset="img/interier-guests@1x.jpg 1x, img/interier-guests@2x.jpg 2x"
                                         type="image/jpg" media="(min-width: 320px)">
-                                    <img class="main__gallery--slider" src="img/interier-guests@1x.jpg" alt="Гостинная">
+                                    <img class="main__gallery--slider" src="img/interier-guests@1x.jpg"
+                                        alt="Гостинная">
                                 </picture>
                             </div>
                         </div>
@@ -842,58 +821,59 @@
             </div>
         </div>
     </sections>
-    </main>
-    <footer class="footer" id="footer">
-        <section class="footer__map-contact">
-            <div class="footer__map-background-img">
-                <!-- <img class="footer__background" src="img/footer-background@1x.png" alt=""> -->
-                <div class="footer__gradient gradient"></div>
-                <div class="footer__wrapp container">
-                    <div id="main__map" class="footer__map">
-                        <picture>
-                            <source srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x" type="image/png"
-                                media="(min-width: 1024px)">
-                            <!-- <source srcset="img/clear-room-desktop@1x.jpg, img/clear-room-desktop@2x.jpg 2x" type="image/jpg"
+</main>
+        <footer class="footer" id="footer">
+    <section class="footer__map-contact">
+        <div class="footer__map-background-img">
+            <!-- <picture><source srcset="img/footer-background@1x.webp" type="image/webp"><img class="footer__background" src="img/footer-background@1x.png" alt=""></picture> -->
+            <div class="footer__gradient gradient"></div>
+            <div class="footer__wrapp container">
+                <div id="main__map" class="footer__map">
+                    <picture>
+                        <source srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x" type="image/png"
+                            media="(min-width: 1024px)">
+                        <!-- <source srcset="img/clear-room-desktop@1x.jpg, img/clear-room-desktop@2x.jpg 2x" type="image/jpg"
                             media="(min-width: 660px)"> -->
-                            <source srcset="img/map@1x.png 1x, img/map@2x.png 2x" type="image/png"
-                                media="(min-width: 320px)">
-                            <img class="footer__map-img img" src="img/map@1x.png" alt="карта">
-                        </picture>
-                    </div>
+                        <source srcset="img/map@1x.png 1x, img/map@2x.png 2x" type="image/png"
+                            media="(min-width: 320px)">
+                        <img class="footer__map-img img" src="img/map@1x.png" alt="карта">
+                    </picture>
+                </div>
 
-                    <div class="footer__contact-block">
-                        <h2 class="footer__contacts title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
-                            Tel:&nbsp;+7 (928) 768 32 29</h2>
-                        <ul class="footer__contacts-wrapp">
-                            <li class="footer__contacts-svg-mail">
-                                <a class="footer__contacts-item footer__contacts-mail" href="#">mail</a>
-                            </li>
-                            <li class="footer__contacts-svg-insta">
-                                <a class="footer__contacts-item footer__contacts-insta" href="#">instagramm</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="footer__contact-block">
+                    <h2 class="footer__contacts title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
+                        Tel:&nbsp;+7 (928) 768 32 29</h2>
+                    <ul class="footer__contacts-wrapp">
+                        <li class="footer__contacts-svg-mail">
+                            <a class="footer__contacts-item footer__contacts-mail footer__contact-hover"
+                                href="#">mail</a>
+                        </li>
+                        <li class="footer__contacts-svg-insta">
+                            <a class="footer__contacts-item footer__contacts-insta footer__contact-hover"
+                                href="#">instagramm</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <div class="header__block header__block-desktop">
-            <div class="header__block--wrap container">
-                <a href="index.html" class="header__logo-text">IC "Repair Design Project"</a>
-                <ul class="header__nav">
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Projects</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Measurement</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Team</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Reviews</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Contacts</a></li>
-                </ul>
-                <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
-                <button href="#main__map" class="header__button-call header__button--color button">Request a
-                    call</button>
-            </div>
         </div>
+    </section>
+    <div class="header__block header__block-desktop">
+        <div class="header__block--wrap container">
+            <a href="index.html" class="header__logo-text">IC "Repair Design Project"</a>
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Projects</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Measurement</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Team</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Reviews</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Contacts</a></li>
+            </ul>
+            <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
+            <button href="#main__map" class="header__button-call header__button--color button">Request a call</button>
+        </div>
+    </div>
 
-    </footer>
+</footer>
     </div>
 </body>
 
